@@ -1,0 +1,16 @@
+#! /usr/bin/env python3
+"""
+方法：从右上角往下往左遍历比较
+"""
+class Solution:
+    def Find(self, target, array):
+        m = 0
+        n = len(array) - 1
+        while m < len(array) and n >= 0:
+            if target > array[m][n]:
+                m += 1
+            elif target < array[m][n]:
+                n -= 1
+            else:
+                return True
+        return False

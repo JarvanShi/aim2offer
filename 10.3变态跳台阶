@@ -1,0 +1,5 @@
+#! /usr/bin/env python3
+class Solution:
+    def jumpFloorII(self, number):
+        ways = pow(2, number-1)
+        return  ways

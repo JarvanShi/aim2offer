@@ -1,0 +1,4 @@
+#! /usr/bin/env python3
+class Solution:
+    def numberOf1(self, n):
+        return sum([n >> i & 1 for i in range(32)])

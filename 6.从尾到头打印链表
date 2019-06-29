@@ -1,0 +1,18 @@
+#! /usr/bin/env python3
+class Solution:
+    """
+    class ListNode:
+    def __init__(self, e):
+        self.val = e
+        self.next = None
+    """
+    def printListFromTailToHead(self, listNode):
+        lst = []
+        while listNode:
+            lst.append(listNode.val)
+            listNode = listNode.next
+            """
+            lst.insert(0, listNode.val)
+            listNode = listNode.next
+            """
+        return lst

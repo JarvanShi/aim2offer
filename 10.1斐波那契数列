@@ -1,0 +1,8 @@
+#! /usr/bin/env python3
+class Solution:
+    def Fibonacci(self, n):
+        fibo = [0, 1]
+        if n > 1:
+            for i in range(n-1):
+                fibo.append(fibo[-1] + fibo[-2])
+        return fibo[n]
